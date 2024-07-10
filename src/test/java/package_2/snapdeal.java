@@ -22,8 +22,6 @@ public class snapdeal {
 	@Test
 	public void tc1() {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		Js.executeScript("document.getElementByID("#inputValEnter"));
-		
+		js.executeScript("document.getElementByID("#inputValEnter").value='books';");
 	}
-
 }
